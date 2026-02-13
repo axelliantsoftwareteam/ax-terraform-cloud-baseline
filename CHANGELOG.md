@@ -2,6 +2,13 @@
 
 All notable changes to this project are documented in this file.
 
+## [1.1.0](https://github.com/axelliantsoftwareteam/ax-terraform-cloud-baseline/compare/v1.0.0...v1.1.0) (2026-02-13)
+
+
+### Features
+
+* Add Terraform baseline for AWS and Azure environments ([#1](https://github.com/axelliantsoftwareteam/ax-terraform-cloud-baseline/issues/1)) ([01ca0e8](https://github.com/axelliantsoftwareteam/ax-terraform-cloud-baseline/commit/01ca0e8185f262b1a59384e4efa9cac5f00c5c7e))
+
 ## [1.0.0] - 2026-02-13
 
 ### Added
