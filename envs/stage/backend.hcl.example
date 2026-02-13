@@ -1,0 +1,5 @@
+bucket         = "ax-terraform-state-stage"
+key            = "ax-terraform-cloud-baseline/stage/terraform.tfstate"
+region         = "us-east-1"
+dynamodb_table = "ax-terraform-locks-stage"
+encrypt        = true

@@ -1,0 +1,47 @@
+# macOS
+.DS_Store
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Terraform
+**/.terraform/*
+*.tfstate
+*.tfstate.*
+crash.log
+crash.*.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+.terraform.lock.hcl
+*.tfvars
+!*.tfvars.example
+
+# Terraform plan artifacts
+**/tfplan
+**/*.tfplan
+
+# Coverage / test outputs
+.coverage
+coverage.xml
+htmlcov/
+
+# IDE/editor
+.idea/
+.vscode/
+*.swp
+
+# Docker local cache
+*.tar

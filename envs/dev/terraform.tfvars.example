@@ -1,0 +1,10 @@
+environment        = "dev"
+aws_region         = "us-east-1"
+availability_zones = ["us-east-1a", "us-east-1b"]
+vpc_cidr           = "10.20.0.0/16"
+owner              = "platform-engineering"
+cost_center        = "ENG-100"
+alert_email        = "security@axelliant.com"
+db_instance_class  = "db.t4g.micro"
+db_multi_az        = false
+endpoint_public_access = false
