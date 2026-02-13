@@ -1,0 +1,14 @@
+version: "3.9"
+
+services:
+  baseline:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: ax-terraform-cloud-baseline:local
+    working_dir: /workspace
+    env_file:
+      - .env.example
+    volumes:
+      - ./:/workspace
+    command: make run ENV=dev

@@ -1,0 +1,28 @@
+name: Docker Build Artifact
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Build Docker Image
+        run: docker build -t ax-terraform-cloud-baseline:${{ github.sha }} .
+
+      - name: Export Docker Image Tar
+        run: docker save ax-terraform-cloud-baseline:${{ github.sha }} -o ax-terraform-cloud-baseline-${{ github.sha }}.tar
+
+      - name: Upload Build Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: docker-image-${{ github.sha }}
+          path: ax-terraform-cloud-baseline-${{ github.sha }}.tar

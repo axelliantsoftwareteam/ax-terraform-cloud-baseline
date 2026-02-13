@@ -1,0 +1,10 @@
+environment        = "prod"
+aws_region         = "us-east-1"
+availability_zones = ["us-east-1a", "us-east-1b", "us-east-1c"]
+vpc_cidr           = "10.40.0.0/16"
+owner              = "platform-engineering"
+cost_center        = "ENG-300"
+alert_email        = "security@axelliant.com"
+db_instance_class  = "db.t4g.medium"
+db_multi_az        = true
+endpoint_public_access = false
